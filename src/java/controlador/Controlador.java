@@ -116,11 +116,11 @@ public class Controlador extends HttpServlet {
                     request.setAttribute("productos", lista);
                     break;
                 case "Agregar":
-                    String dni = request.getParameter("txtDni");
+                    String nom = request.getParameter("txtDni");
                     double pre = Double.parseDouble(request.getParameter("txtNombres"));
                     int st = Integer.parseInt(request.getParameter("txtTel"));
                     String est = request.getParameter("txtEstado");
-                    p.setNom(dni);
+                    p.setNom(nom);
                     p.setPre(pre);
                     p.setStock(st);
                     p.setEstado(est);
